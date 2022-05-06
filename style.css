@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+.header {
+  background-image: url(./images/home-bg.jpg);
+}
+
+.navbar.active {
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.navbar.active .navbar-brand {
+  color: black;
+}
+
+.navbar.active .hamburger {
+  color: black;
+}
+
+.navbar.active .nav-link {
+  color: black;
+}
+
+@media (max-width: 767px) {
+  #collapsibleNavbar {
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+  }
+  .nav-link {
+    color: black !important;
+  }
+}
+
+.text-orange {
+  color: #ff5421;
+}
+
+.btn-orange {
+  background-color: #ff5421;
+}
+.btn-orange:hover {
+  background-color: white;
+  color: #ff5421 !important;
+}
+
+.hover-orange:hover {
+  color: #ff5421 !important;
+}
+
+.about,
+.courses {
+  background-color: #1f1015;
+}
+
+.counter {
+  background-image: url(./images/counter-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.media {
+  left: -100%;
+}
+
+.trainers,
+.media {
+  border-radius: 0 5px 0;
+}
+
+.trainers-container:hover .trainers {
+  left: -100%;
+}
+
+.trainers-container:hover .media {
+  left: inherit;
+}
+
+.media > a:hover {
+  color: #ff5421 !important;
+}
+
+.border-orange{
+  border-color: #ff5421;
+}
