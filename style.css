@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
+  color: white;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
 }
 
 html {
@@ -11,13 +14,23 @@ html {
   scroll-padding-top: 8rem;
 }
 
+body {
+  background-color: #1f1015;
+}
+
+/* home section starts*/
 .header {
   background-image: url(./images/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .navbar.active {
   background-color: #fff;
-  transition: all 0.5s;
+  transition: all 2.5s;
+  height: 60px !important;
 }
 
 .navbar.active .navbar-brand {
@@ -41,35 +54,33 @@ html {
     color: black !important;
   }
 }
+/* home section ends*/
 
-.text-orange {
-  color: #ff5421;
+/* about section starts */
+@media (max-width: 767px) {
+  .w-fixed {
+    max-width: 420px;
+  }
+}
+/* about section ends */
+
+/* counter section starts */
+.full-width {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
 }
 
-.btn-orange {
-  background-color: #ff5421;
-}
-.btn-orange:hover {
-  background-color: white;
-  color: #ff5421 !important;
-}
-
-.hover-orange:hover {
-  color: #ff5421 !important;
-}
-
-.about,
-.courses {
-  background-color: #1f1015;
-}
-
-.counter {
+#counter {
   background-image: url(./images/counter-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* counter section ends */
 
+/* team section starts */
 .media {
   left: -100%;
 }
@@ -83,14 +94,41 @@ html {
   left: -100%;
 }
 
+.trainers-container,
+.trainers-container img {
+  border-radius: 0 20px 0 20px;
+}
+
 .trainers-container:hover .media {
   left: inherit;
 }
 
-.media > a:hover {
+.media > a > i:hover {
   color: #ff5421 !important;
 }
+/* team section ends */
 
-.border-orange{
+.border-orange {
   border-color: #ff5421;
 }
+
+#footer {
+  background-color: #2a0d05;
+}
+
+/* colors starts */
+.text-orange {
+  color: #ff5421;
+}
+.btn-orange {
+  background-color: #ff5421;
+  color: white !important;
+}
+.btn-orange:hover {
+  background-color: white;
+  color: #ff5421 !important;
+}
+.hover-orange:hover {
+  color: #ff5421 !important;
+}
+/* colors ends */
